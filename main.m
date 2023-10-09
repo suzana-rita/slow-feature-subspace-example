@@ -29,13 +29,12 @@ video_open_0000 = video_open;
 video_close_0000 = video_close;
 clear video_open video_close
 
-
 C_coef=10;
 num_weight_vecs = 10;
 sub_dim = 5;
 
-video_open_norm = cvtNormalize(video_open_0000);
-video_close_norm = cvtNormalize(video_close_0000);
+video_open_norm = Normalize(video_open_0000);
+video_close_norm = Normalize(video_close_0000);
 
 std_subspace_open = BasisVectorSVD(video_open_norm, sub_dim);
 std_subspace_close = BasisVectorSVD(video_close_norm, sub_dim);
@@ -43,14 +42,6 @@ std_subspace_close = BasisVectorSVD(video_close_norm, sub_dim);
 sfs_open = SlowFeatureSubspace(video_open_0000, num_weight_vecs, C_coef, sub_dim);
 sfs_close = SlowFeatureSubspace(video_close_0000, num_weight_vecs, C_coef, sub_dim);
 
-% pv_open_norm = cvtNormalize(pv_open);
-% pv_close_norm = cvtNormalize(pv_close);
-% 
-% sfs_subspace_open = BasisVectorSVD(pv_open_norm, sub_dim);
-% sfs_subspace_close = BasisVectorSVD(pv_close_norm, sub_dim);
-
-% sfs_std_sim_open = CanonicalAnglesMean(sfs_subspace_open, std_subspace_open);
-% sfs_std_sim_close = cvtCanonicalAnglesMean(sfs_subspace_close, std_subspace_close);
 
 % In this example, the traditional subspace has similarity equal to 1.0,
 % which means that the subspaces are identical. In this way, the
