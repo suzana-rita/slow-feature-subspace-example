@@ -28,7 +28,7 @@ If you use our code, please consider citing our work:
 }
 @inproceedings{beleza2021slow,
   title={Slow feature subspace for action recognition},
-  author={Beleza, Suzana RA and Fukui, Kazuhiro},
+  author={Beleza, Suzana R. A. and Fukui, Kazuhiro},
   booktitle={Pattern Recognition. ICPR International Workshops and Challenges: Virtual Event, January 10--15, 2021, Proceedings, Part III},
   pages={702--716},
   year={2021},
