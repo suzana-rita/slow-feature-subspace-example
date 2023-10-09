@@ -2,10 +2,10 @@
 Comparison between slow feature subspace and traditional subspaces using Matlab.
 
 <div align="center">
-  <img src="[https://github.com/suzana-rita/slow-feature-subspace-example/main/problem-explanation-graph.png](https://github.com/suzana-rita/slow-feature-subspace-example/main/problem-explanation-graph.png
-)" width="380px">
+  <img src="[problem-explanation-graph.png](problem-explanation-graph.png)" width="100px">
   <p style="font-size:1.5vw;"> Figure 1. Comparison between traditional subspaces and slow feature subspaces representations</p>
 </div>
+
 
 This figure shows a comparison between the conventional PCA-based subspace (Figure a) and our SFS (Figure b). In this example, we compare two videos: one for "close hand" and another for "open hand". The "open hand" sample contains the same frames as "close hand" video, but in reversed order. Additionally, the subspace similarity is employed as a metric to quantify the difference between subspaces. A higher similarity score indicates greater equivalence, with 1.0 representing identical subspaces. In contrast, a similarity score smaller than 1.0 indicates that the subspaces are different. As shown in Figure a), conventional subspaces created from different videos based on the same frames have a similarity of 1.0, which means these subspaces are equal. On the other hand, Figure b) illustrates that the slow feature subspaces are different, with a similarity score of 0.77. Unlike conventional subspaces, our slow feature subspaces can distinguish sequential differences even when the videos have the same frames in reversed order.
 
