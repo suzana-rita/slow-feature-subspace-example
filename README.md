@@ -2,7 +2,7 @@
 Comparison between slow feature subspace and traditional subspaces using Matlab.
 
 <div align="center">
-  <img src="[problem-explanation-graph.png](problem-explanation-graph.png)" width="100px">
+  <img src="https://github.com/suzana-rita/slow-feature-subspace-example/blob/9fd34c02c794f52594ddb4806b8261b25c672929/problem-explanation-graph.png" width="700px">
   <p style="font-size:1.5vw;"> Figure 1. Comparison between traditional subspaces and slow feature subspaces representations</p>
 </div>
 
