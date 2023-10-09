@@ -16,12 +16,6 @@ function SFS = SlowFeatureSubspace(X, num_w, C, sub_dim)
             Xdot(:,t)= X(:,t+1) - X(:,t);
         end
     end
-    
-    %disp("Calculate sum Xdot*Xdot'")
-%     sum_xdot = zeros(size(Xdot,1),size(Xdot,1));
-%     for t = 1:size(Xdot,2)
-%         sum_xdot = sum_xdot + Xdot(:,t)*Xdot(:,t)';
-%     end
 
     sum_xdot = Xdot*Xdot';
 

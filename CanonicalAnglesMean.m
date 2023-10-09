@@ -1,14 +1,5 @@
 function C = CanonicalAnglesMean(X,varargin)
-% C = cvtCanonicalAnglesMean(X,varargin)
-%  各部分空間同士のの正準角を求める
-% 
-% ----INPUT----
-% X:SubSpace Sets
-% Y:SubSpace Sets
-% 
-% ----OUTPUT----
-% C:canonical angle
-% 
+
 if nargin < 1
     error('error');
 end
