@@ -1,6 +1,8 @@
-clear
+
 %% only calculate the subspace
 % data for comparison
+clear
+
 load ('0000_openhand_gray_float_40x30.mat')
 video_open_0000 = video_open;
 clear video_open
